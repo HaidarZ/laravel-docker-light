@@ -1,0 +1,24 @@
+
+### Paths #################################################
+
+# Point to the path of your applications code on your host
+APPLICATION_PATH=../src
+
+# Choose storage path on your machine. For all storage systems
+DATA_PATH_HOST=../data
+
+### Drivers ################################################
+
+# All volumes driver
+VOLUMES_DRIVER=local
+
+# All Networks driver
+NETWORKS_DRIVER=bridge
+
+### MYSQL #################################################
+MYSQL_DATABASE=default
+MYSQL_USER=default
+MYSQL_PASSWORD=secret
+MYSQL_ROOT_PASSWORD=root
+MYSQL_PORT=3306
+MYSQL_ENTRYPOINT_INITDB=./mysql/docker-entrypoint-initdb.d
